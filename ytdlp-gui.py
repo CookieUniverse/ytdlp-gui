@@ -162,7 +162,7 @@ class MainWindow(CTk.CTk):
             self.iconbitmap("images/icon.ico")
         else:
             icon = tk.PhotoImage(file='images/icon.png')
-            self.tk.call('wm', 'iconphoto', root._w, icon)
+            self.tk.call('wm', 'iconphoto', self._w, icon)
         pyglet.font.add_file("fonts/ConfigRoundedMedium.ttf")
         self.startFrame()
 
